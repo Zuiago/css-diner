@@ -154,7 +154,7 @@ var levels = [
     `
   },
   {
-    doThis : "Selecione todos os pratos nos bentos",
+    doThis : "Selecione todos os pratos e bentos",
     selector : "plate,bento",
     selectorName : "Comma Combinator",
     helpTitle: "Combine selectors, with... commas!",
@@ -389,282 +389,282 @@ var levels = [
     <plate id="fancy"/>
     `
   },
-//   {
-//     selectorName: "Nth Last Child Selector",
-//     helpTitle: "Seleciona um elemento por sua ordem em outro elemento, contando da direita para esquerda",
-//     doThis : "Selecione o primeiro bento",
-//     selector : "bento:nth-last-child(3)",
-//     syntax: ":nth-last-child(A)",
-//     help : "Seleciona o filho pela parte inferior do pai. É parecido com nth-child, mas conta do final!",
-//     examples : [
-//       '<strong>:nth-last-child(2)</strong> seleciona todos os seguntos elementos filhos do final.'
-//     ],
-//     boardMarkup: `
-//     <plate/>
-//     <bento/>
-//     <plate>
-//       <orange/>
-//       <orange/>
-//       <orange/>
-//     </plate>
-//     <bento/>
-//     `
-//   },
-//   {
-//     selectorName: "First of Type Selector",
-//     helpTitle: "Seleciona o primeiro elemento de um tipo específico",
-//     doThis : "Selecione a primeira maçã",
-//     selector : "apple:first-of-type",
-//     syntax: ":first-of-type",
-//     help : "Seleciona o primeiro elemento do seu tipo, dentro de outro elemento.",
-//     examples : [
-//       '<strong>span:first-of-type</strong> seleciona o primeiro elemento <tag>span</tag> em qualquer elemento.'
-//     ],
-//     boardMarkup: `
-//     <orange class="small"/>
-//     <apple/>
-//     <apple class="small"/>
-//     <apple/>
-//     <apple class="small"/>
-//     <plate>
-//       <orange class="small"/>
-//       <orange/>
-//     </plate>
-//     `
-//   },
-//   {
-//     selectorName: "Nth of Type Selector",
-//     doThis: "Selecione todos os pratos pares (divisíveis por 2)",
-//     selector: "plate:nth-of-type(even)",
-//     syntax: ":nth-of-type(A)",
-//     help: "Seleciona um elemento específico baseado no seu tipo e ordem em outro componente - instâncias pares(even) ou ímpares deste elemento.",
-//     examples: [
-//       '<strong>div:nth-of-type(2)</strong> seleciona a segunda instância de uma div.',
-//       '<strong>.example:nth-of-type(odd)</strong> seleciona todas as instancias ímpares de um example class.'
-// ],
-//     boardMarkup : `
-//     <plate/>
-//     <plate/>
-//     <plate/>
-//     <plate/>
-//     <plate id="fancy"/>
-//     <plate/>
-//     `
-//   },
-//   {
-//     selectorName: "Nth-of-type Selector with Formula",
-//     doThis: "Selecione o segundo prato, começando do terceiro",
-//     selector: "plate:nth-of-type(2n+3)",
-//     syntax: ":nth-of-type(An+B)",
-//     help: "A formula nth-of-type seleciona cada elemento nth, começando a contagem na instância específica deste elemento.",
-//     examples: [
-//       '<strong>span:nth-of-type(6n+2)</strong> seleciona cada sexta instância de <tag>span</tag>, começando (e incluindo) a sengunda instância.'
-//     ],
-//     boardMarkup : `
-//     <plate/>
-//     <plate>
-//       <pickle class="small" />
-//     </plate>
-//     <plate>
-//       <apple class="small" />
-//     </plate>
-//     <plate/>
-//     <plate>
-//       <apple />
-//     </plate>
-//     <plate/>
-//     `
-//   },
-//   {
-//     selectorName: "Only of Type Selector",
-//     helpTitle: "Seleciona os elementos que são os únicos de seu tipo dentro do elemento pai",
-//     selector : "apple:only-of-type",
-//     syntax: ":only-of-type",
-//     doThis : "Selecione a maçã no meio do prato",
-//     help : "Seleciona o único elemento de seu tipo dentro de outro elemento.",
-//     examples : [
-//       '<strong>p span:only-of-type</strong> seleciona um <tag>span</tag> dentro de qualquer <tag>p</tag> se ele for o único <tag>span</tag> presente.'
-//     ],
-//     boardMarkup: `
-//     <plate id="fancy">
-//       <apple class="small" />
-//       <apple />
-//     </plate>
-//     <plate>
-//       <apple class="small" />
-//     </plate>
-//     <plate>
-//       <pickle />
-//     </plate>
-//     `
-//   },
-//   {
-//     selectorName: "Last of Type Selector",
-//     helpTitle: "Seleciona o último elemento de um tipo específico",
-//     doThis : "Selecione as últimas maçãs e laranjas",
-//     selector : ".small:last-of-type",
-//     syntax: ":last-of-type",
-//     help : "Seleciona cada último elemento desse tipo dentro de outro elemento. Lembre-se tipo se refere ao tipo da tag, então <tag>p</tag> e <tag>span</tag> são diferentes tipos. <br><br> Pergunto-me se é assim que o último dinossauro foi selecionado antes de extinção.",
-//     examples : [
-//       '<strong>div:last-of-type</strong> seleciona a últim <tag>div</tag> em cada elemento.',
-//       '<strong>p span:last-of-type</strong> seleciona o último <tag>span</tag> em cada elemento <tag>p</tag>.'
-//     ],
-//     boardMarkup : `
-//     <orange class="small"/>
-//     <orange class="small" />
-//     <pickle />
-//     <pickle />
-//     <apple class="small" />
-//     <apple class="small" />
-//     `
-//   },
-//   {
-//     selectorName: "Empty Selector",
-//     helpTitle: "Seleciona elementos que não tem filhos",
-//     doThis : "Selecione os bents vazios",
-//     selector : "bento:empty",
-//     syntax: ":empty",
-//     help : "Seleciona elementos que não possuem outros elementos dentro deles.",
-//     examples : [
-//       '<strong>div:empty</strong> seleciona todos os elementos <tag>div</tag> vazios.'
-//     ],
-//     boardMarkup:`
-//     <bento/>
-//     <bento>
-//       <pickle class="small"/>
-//     </bento>
-//     <plate/>
-//     <bento/>`
-//   },
-//   {
-//     selectorName: "Negation Pseudo-class",
-//     helpTitle: "Seleciona todos os elementos que não correspondem ao seletor de negação",
-//     doThis : "Selecione a maior maçã",
-//     selector : "apple:not(.small)",
-//     syntax: ":not(X)",
-//     help : 'Você pode usar isso para selecionar todos os elementos que não correspondem ao seletor <strong>"X"</strong>.',
-//     examples : [
-//       '<strong>:not(#fancy)</strong> seleciona todos os elementos que não tem <strong>id="fancy"</strong>.',
-//       '<strong>div:not(:first-child)</strong> seleciona cada <tag>div</tag> que não é first child.',
-//       '<strong>:not(.big, .medium)</strong> seleciona todos os elementos que não possuem <strong>class="big"</strong> ou <strong>class="medium"</strong>.'
-//     ],
-//     boardMarkup: `
-//     <plate id="fancy">
-//       <apple class="small" />
-//     </plate>
-//     <plate>
-//       <apple />
-//     </plate>
-//     <apple />
-//     <plate>
-//       <orange class="small" />
-//     </plate>
-//     <pickle class="small" />
-//     `
-//   },
-//   {
-//     selectorName: "Attribute Selector",
-//     helpTitle: "Seleciona todos os elementos que possuem um atributo específico",
-//     doThis : "Selecione os itens para alguém",
-//     selector : "[for]",
-//     syntax: "[attribute]",
-//     help : 'Atributos aparecem dentro de uma tag de um elemento, exemplo: <tag>span attribute="value"</tag>. Um atributo nem sempre tem um valor, pode ser vazio!',
-//     examples : [
-//       '<strong>a[href]</strong> seleciona todos os elementos <tag>a</tag> que possuem um atributo <strong>href="anything"</strong>.',
-//       '<strong>[type]</strong> seleciona todos os elementos que possuem o atributo <strong>type="anything"</strong>.'
-//     ],
-//     boardMarkup:`
-//     <bento><apple class="small"/></bento>
-//     <apple for="Ethan"/>
-//     <plate for="Alice"><pickle/></plate>
-//     <bento for="Clara"><orange/></bento>
-//     <pickle/>`
-//   },
-//   {
-//     selectorName: "Attribute Selector",
-//     helpTitle: "Seleciona todos os elementos que possuem um atributo específico",
-//     doThis : "Selecione os pratos para alguém",
-//     selector : "plate[for]",
-//     syntax: "A[attribute]",
-//     help : "Combine o attribute selector com outro selector (como a tag name selector)",
-//     examples : [
-//       '<strong>[value]</strong> selecione todos elementos que possuem o atributo <strong>value="anything"</strong>.',
-//       '<strong>a[href]</strong> selecione todos elementos <tag>a</tag> que possuem o atributo <strong>href="anything"</strong>.',
-//       '<strong>input[disabled]</strong> selecione todos elementos <tag>input</tag> que possuem o atributo <strong>disabled</strong>'
-//     ],
-//     boardMarkup:`
-//     <plate for="Sarah"><pickle/></plate>
-//     <plate for="Luke"><apple/></plate>
-//     <plate/>
-//     <bento for="Steve"><orange/></bento>
-//     `
-//   },
-//   {
-//     selectorName: "Attribute Value Selector",
-//     helpTitle: "Seleciona todos os elementos que possuem um valor de atributo específico",
-//     doThis : "Selecione a comida da Vitaly",
-//     selector : "[for=Vitaly]",
-//     syntax: '[attribute="value"]',
-//     help : "Attribute Value Selectors são case sensitive, cada caractere precisa exatamente corresponder.",
-//     examples : [
-//       '<strong>input[type="checkbox"]</strong> selects all checkbox input elements.'
-//     ],
-//     boardMarkup:`
-//     <apple for="Alexei" />
-//     <bento for="Albina"><apple /></bento>
-//     <bento for="Vitaly"><orange/></bento>
-//     <pickle/>
-//     `
-//   },
-//   {
-//     selectorName: "Attribute Starts With Selector",
-//     helpTitle: "Seleciona todos elementos com um valor de atributo que começa com caracteres específicos",
-//     doThis : "Selecione os itens para para os nomes que começam com 'Sa'",
-//     selector : '[for^="Sa"]',
-//     syntax: '[attribute^="value"]',
-//     help : "Você pode usar aspas entre os valores no seletor, ou não, é opcional!",
-//     examples : [
-//       '<strong>.toy[category^="Swim"]</strong> seleciona elementos com a class <strong>toy</strong> e também <strong>category="Swimwear"</strong> ou <strong>category="Swimming"</strong>.'
-//     ],
-//     boardMarkup: `
-//     <plate for="Sam"><pickle/></plate>
-//     <bento for="Sarah"><apple class="small"/></bento>
-//     <bento for="Mary"><orange/></bento>
-//     `
-//   },
-//   {
-//     selectorName: "Attribute Ends With Selector",
-//     helpTitle: "Seleciona todos elementos com um valor de atributo que termina com caracteres específicos",
-//     doThis : "Selecione os itens para os nomes que terminam em 'ato'",
-//     selector : '[for$="ato"]',
-//     syntax: '[attribute$="value"]',
-//     help : '',
-//     examples : [
-//       '<strong>img[src$=".jpg"]</strong> selecione todas as imagens que terminam com <strong>.jpg</strong>.',
-//     ],
-//     boardMarkup:`
-//     <apple class="small"/>
-//     <bento for="Hayato"><pickle/></bento>
-//     <apple for="Ryota"></apple>
-//     <plate for="Minato"><orange/></plate>
-//     <pickle class="small"/>
-//     `
-//   },
-//   {
-//     selectorName: "Attribute Wildcard Selector",
-//     helpTitle: "Seleciona todos elementos com o valor de atributo que contém caracteres específicos em qualquer lugar",
-//     syntax: '[attribute*="value"]',
-//     doThis : "Selecione as comidas para os nomes que contém 'obb'",
-//     selector : '[for*="obb"]',
-//     help : 'Um seletor útil se você pode identificar um padrão comum em <strong>class</strong>, <strong>href</strong> ou atributos <strong>src</strong>.',
-//     examples : [
-//       '<strong>img[src*="/thumbnails/"]</strong> seleciona todos elementos de imagem que mostra imagens de uma pasta chamada "thumbnails".',
-//       '<strong>[class*="heading"]</strong> seleciona todos elementos que contém "heading" em sua class, como <strong>class="main-heading"</strong> e <strong>class="sub-heading"</strong>'
-//     ],
-//     boardMarkup:`
-//     <bento for="Robbie"><apple /></bento>
-//     <bento for="Timmy"><pickle /></bento>
-//     <bento for="Bobby"><orange /></bento>
-//     `
-//   }
+  {
+    selectorName: "Nth Last Child Selector",
+    helpTitle: "Seleciona um elemento por sua ordem em outro elemento, contando da direita para esquerda",
+    doThis : "Selecione o primeiro bento",
+    selector : "bento:nth-last-child(3)",
+    syntax: ":nth-last-child(A)",
+    help : "Seleciona o filho pela parte inferior do pai. É parecido com nth-child, mas conta do final!",
+    examples : [
+      '<strong>:nth-last-child(2)</strong> seleciona todos os seguntos elementos filhos do final.'
+    ],
+    boardMarkup: `
+    <plate/>
+    <bento/>
+    <plate>
+      <orange/>
+      <orange/>
+      <orange/>
+    </plate>
+    <bento/>
+    `
+  },
+  {
+    selectorName: "First of Type Selector",
+    helpTitle: "Seleciona o primeiro elemento de um tipo específico",
+    doThis : "Selecione a primeira maçã",
+    selector : "apple:first-of-type",
+    syntax: ":first-of-type",
+    help : "Seleciona o primeiro elemento do seu tipo, dentro de outro elemento.",
+    examples : [
+      '<strong>span:first-of-type</strong> seleciona o primeiro elemento <tag>span</tag> em qualquer elemento.'
+    ],
+    boardMarkup: `
+    <orange class="small"/>
+    <apple/>
+    <apple class="small"/>
+    <apple/>
+    <apple class="small"/>
+    <plate>
+      <orange class="small"/>
+      <orange/>
+    </plate>
+    `
+  },
+  {
+    selectorName: "Nth of Type Selector",
+    doThis: "Selecione todos os pratos pares (divisíveis por 2)",
+    selector: "plate:nth-of-type(even)",
+    syntax: ":nth-of-type(A)",
+    help: "Seleciona um elemento específico baseado no seu tipo e ordem em outro componente - instâncias pares(even) ou ímpares deste elemento.",
+    examples: [
+      '<strong>div:nth-of-type(2)</strong> seleciona a segunda instância de uma div.',
+      '<strong>.example:nth-of-type(odd)</strong> seleciona todas as instancias ímpares de um example class.'
+],
+    boardMarkup : `
+    <plate/>
+    <plate/>
+    <plate/>
+    <plate/>
+    <plate id="fancy"/>
+    <plate/>
+    `
+  },
+  {
+    selectorName: "Nth-of-type Selector with Formula",
+    doThis: "Selecione o segundo prato, começando do terceiro",
+    selector: "plate:nth-of-type(2n+3)",
+    syntax: ":nth-of-type(An+B)",
+    help: "A formula nth-of-type seleciona cada elemento nth, começando a contagem na instância específica deste elemento.",
+    examples: [
+      '<strong>span:nth-of-type(6n+2)</strong> seleciona cada sexta instância de <tag>span</tag>, começando (e incluindo) a sengunda instância.'
+    ],
+    boardMarkup : `
+    <plate/>
+    <plate>
+      <pickle class="small" />
+    </plate>
+    <plate>
+      <apple class="small" />
+    </plate>
+    <plate/>
+    <plate>
+      <apple />
+    </plate>
+    <plate/>
+    `
+  },
+  {
+    selectorName: "Only of Type Selector",
+    helpTitle: "Seleciona os elementos que são os únicos de seu tipo dentro do elemento pai",
+    selector : "apple:only-of-type",
+    syntax: ":only-of-type",
+    doThis : "Selecione a maçã no meio do prato",
+    help : "Seleciona o único elemento de seu tipo dentro de outro elemento.",
+    examples : [
+      '<strong>p span:only-of-type</strong> seleciona um <tag>span</tag> dentro de qualquer <tag>p</tag> se ele for o único <tag>span</tag> presente.'
+    ],
+    boardMarkup: `
+    <plate id="fancy">
+      <apple class="small" />
+      <apple />
+    </plate>
+    <plate>
+      <apple class="small" />
+    </plate>
+    <plate>
+      <pickle />
+    </plate>
+    `
+  },
+  {
+    selectorName: "Last of Type Selector",
+    helpTitle: "Seleciona o último elemento de um tipo específico",
+    doThis : "Selecione as últimas maçãs e laranjas",
+    selector : ".small:last-of-type",
+    syntax: ":last-of-type",
+    help : "Seleciona cada último elemento desse tipo dentro de outro elemento. Lembre-se tipo se refere ao tipo da tag, então <tag>p</tag> e <tag>span</tag> são diferentes tipos. <br><br> Pergunto-me se é assim que o último dinossauro foi selecionado antes de extinção.",
+    examples : [
+      '<strong>div:last-of-type</strong> seleciona a últim <tag>div</tag> em cada elemento.',
+      '<strong>p span:last-of-type</strong> seleciona o último <tag>span</tag> em cada elemento <tag>p</tag>.'
+    ],
+    boardMarkup : `
+    <orange class="small"/>
+    <orange class="small" />
+    <pickle />
+    <pickle />
+    <apple class="small" />
+    <apple class="small" />
+    `
+  },
+  {
+    selectorName: "Empty Selector",
+    helpTitle: "Seleciona elementos que não tem filhos",
+    doThis : "Selecione os bents vazios",
+    selector : "bento:empty",
+    syntax: ":empty",
+    help : "Seleciona elementos que não possuem outros elementos dentro deles.",
+    examples : [
+      '<strong>div:empty</strong> seleciona todos os elementos <tag>div</tag> vazios.'
+    ],
+    boardMarkup:`
+    <bento/>
+    <bento>
+      <pickle class="small"/>
+    </bento>
+    <plate/>
+    <bento/>`
+  },
+  {
+    selectorName: "Negation Pseudo-class",
+    helpTitle: "Seleciona todos os elementos que não correspondem ao seletor de negação",
+    doThis : "Selecione a maior maçã",
+    selector : "apple:not(.small)",
+    syntax: ":not(X)",
+    help : 'Você pode usar isso para selecionar todos os elementos que não correspondem ao seletor <strong>"X"</strong>.',
+    examples : [
+      '<strong>:not(#fancy)</strong> seleciona todos os elementos que não tem <strong>id="fancy"</strong>.',
+      '<strong>div:not(:first-child)</strong> seleciona cada <tag>div</tag> que não é first child.',
+      '<strong>:not(.big, .medium)</strong> seleciona todos os elementos que não possuem <strong>class="big"</strong> ou <strong>class="medium"</strong>.'
+    ],
+    boardMarkup: `
+    <plate id="fancy">
+      <apple class="small" />
+    </plate>
+    <plate>
+      <apple />
+    </plate>
+    <apple />
+    <plate>
+      <orange class="small" />
+    </plate>
+    <pickle class="small" />
+    `
+  },
+  {
+    selectorName: "Attribute Selector",
+    helpTitle: "Seleciona todos os elementos que possuem um atributo específico",
+    doThis : "Selecione os itens para alguém",
+    selector : "[for]",
+    syntax: "[attribute]",
+    help : 'Atributos aparecem dentro de uma tag de um elemento, exemplo: <tag>span attribute="value"</tag>. Um atributo nem sempre tem um valor, pode ser vazio!',
+    examples : [
+      '<strong>a[href]</strong> seleciona todos os elementos <tag>a</tag> que possuem um atributo <strong>href="anything"</strong>.',
+      '<strong>[type]</strong> seleciona todos os elementos que possuem o atributo <strong>type="anything"</strong>.'
+    ],
+    boardMarkup:`
+    <bento><apple class="small"/></bento>
+    <apple for="Ethan"/>
+    <plate for="Alice"><pickle/></plate>
+    <bento for="Clara"><orange/></bento>
+    <pickle/>`
+  },
+  {
+    selectorName: "Attribute Selector",
+    helpTitle: "Seleciona todos os elementos que possuem um atributo específico",
+    doThis : "Selecione os pratos para alguém",
+    selector : "plate[for]",
+    syntax: "A[attribute]",
+    help : "Combine o attribute selector com outro selector (como a tag name selector)",
+    examples : [
+      '<strong>[value]</strong> selecione todos elementos que possuem o atributo <strong>value="anything"</strong>.',
+      '<strong>a[href]</strong> selecione todos elementos <tag>a</tag> que possuem o atributo <strong>href="anything"</strong>.',
+      '<strong>input[disabled]</strong> selecione todos elementos <tag>input</tag> que possuem o atributo <strong>disabled</strong>'
+    ],
+    boardMarkup:`
+    <plate for="Sarah"><pickle/></plate>
+    <plate for="Luke"><apple/></plate>
+    <plate/>
+    <bento for="Steve"><orange/></bento>
+    `
+  },
+  {
+    selectorName: "Attribute Value Selector",
+    helpTitle: "Seleciona todos os elementos que possuem um valor de atributo específico",
+    doThis : "Selecione a comida da Vitaly",
+    selector : "[for=Vitaly]",
+    syntax: '[attribute="value"]',
+    help : "Attribute Value Selectors são case sensitive, cada caractere precisa exatamente corresponder.",
+    examples : [
+      '<strong>input[type="checkbox"]</strong> selects all checkbox input elements.'
+    ],
+    boardMarkup:`
+    <apple for="Alexei" />
+    <bento for="Albina"><apple /></bento>
+    <bento for="Vitaly"><orange/></bento>
+    <pickle/>
+    `
+  },
+  {
+    selectorName: "Attribute Starts With Selector",
+    helpTitle: "Seleciona todos elementos com um valor de atributo que começa com caracteres específicos",
+    doThis : "Selecione os itens para para os nomes que começam com 'Sa'",
+    selector : '[for^="Sa"]',
+    syntax: '[attribute^="value"]',
+    help : "Você pode usar aspas entre os valores no seletor, ou não, é opcional!",
+    examples : [
+      '<strong>.toy[category^="Swim"]</strong> seleciona elementos com a class <strong>toy</strong> e também <strong>category="Swimwear"</strong> ou <strong>category="Swimming"</strong>.'
+    ],
+    boardMarkup: `
+    <plate for="Sam"><pickle/></plate>
+    <bento for="Sarah"><apple class="small"/></bento>
+    <bento for="Mary"><orange/></bento>
+    `
+  },
+  {
+    selectorName: "Attribute Ends With Selector",
+    helpTitle: "Seleciona todos elementos com um valor de atributo que termina com caracteres específicos",
+    doThis : "Selecione os itens para os nomes que terminam em 'ato'",
+    selector : '[for$="ato"]',
+    syntax: '[attribute$="value"]',
+    help : '',
+    examples : [
+      '<strong>img[src$=".jpg"]</strong> selecione todas as imagens que terminam com <strong>.jpg</strong>.',
+    ],
+    boardMarkup:`
+    <apple class="small"/>
+    <bento for="Hayato"><pickle/></bento>
+    <apple for="Ryota"></apple>
+    <plate for="Minato"><orange/></plate>
+    <pickle class="small"/>
+    `
+  },
+  {
+    selectorName: "Attribute Wildcard Selector",
+    helpTitle: "Seleciona todos elementos com o valor de atributo que contém caracteres específicos em qualquer lugar",
+    syntax: '[attribute*="value"]',
+    doThis : "Selecione as comidas para os nomes que contém 'obb'",
+    selector : '[for*="obb"]',
+    help : 'Um seletor útil se você pode identificar um padrão comum em <strong>class</strong>, <strong>href</strong> ou atributos <strong>src</strong>.',
+    examples : [
+      '<strong>img[src*="/thumbnails/"]</strong> seleciona todos elementos de imagem que mostra imagens de uma pasta chamada "thumbnails".',
+      '<strong>[class*="heading"]</strong> seleciona todos elementos que contém "heading" em sua class, como <strong>class="main-heading"</strong> e <strong>class="sub-heading"</strong>'
+    ],
+    boardMarkup:`
+    <bento for="Robbie"><apple /></bento>
+    <bento for="Timmy"><pickle /></bento>
+    <bento for="Bobby"><orange /></bento>
+    `
+  }
 ];
