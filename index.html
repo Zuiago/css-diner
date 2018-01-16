@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS Diner - Where we feast on CSS Selectors!</title>
+<head>
+    <title>CSS Diner - Onde brincamos com Seletores CSS!</title>
     <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/levels.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/restaurant.js" type="text/javascript" charset="utf-8"></script>
@@ -10,23 +10,27 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link href='https://fonts.googleapis.com/css?family=Exo+2:200,400,600,400italic,600italic' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" title="no title"
+          charset="utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
-    <meta property="og:url"           content="http://cssdiner.com" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="CSS Diner" />
-    <meta property="og:description"   content="A fun game to help you learn and practice CSS selectors." />
-    <meta property="og:image"         content="https://flukeout.github.io/images/fb-share.jpg" />
-  </head>
+    <meta charset="UTF-8">
+    <meta property="og:url" content="http://cssdiner.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="CSS Diner"/>
+    <meta property="og:description" content="A fun game to help you learn and practice CSS selectors."/>
+    <meta property="og:image" content="https://flukeout.github.io/images/fb-share.jpg"/>
+</head>
 
-  <body>
-    <div class="left-col">
+<body>
+<div class="left-col">
 
-      <header>
+    <header>
         CSS Diner
         <div class="logo">
-          <plate><apple /></plate>
+            <plate>
+                <apple/>
+            </plate>
         </div>
         <span class="share-menu">
           Share
@@ -34,18 +38,18 @@
           <a class="share-facebook" type="facebook" href="#"></a>
           <a class="share-email" type="email" href="#"></a>
         </span>
-      </header>
+    </header>
 
-      <h2 class="order"></h2>
+    <h2 class="order"></h2>
 
-      <div class="note">
-        <h3>No worries, you've got this!</h3>
+    <div class="note">
+        <h3>Não se preocupe, você consegui!</h3>
         <p>
-          You're about to learn CSS Selectors!
-          Selectors are how you pick which element to apply styles to.
+            Você está aprendendo Seletores CSS!
+            Os seletores são como você escolhe qual elemento aplicar estilos.
         </p>
 
-        <h4>Exhibit 1 - A CSS Rule</h4>
+        <h4>Exemplo 1</h4>
 
         <pre>
 p {
@@ -53,135 +57,155 @@ p {
 }</pre>
 
         <p>
-          Here, the "p" is the selector (selects all &lt;p&gt; elements) and applies the margin-bottom style.
+            Aqui, "p" é o seletor (seleciona todos os elementos
+        <p>) e aplica o margin-bottom style.
         </p>
         <p>
-          To play, type in a CSS selector in the editor below to select the correct items on the table.If you get it right, you'll advance to the next level.
+            Para jogar, digite um seletor de CSS no editor abaixo para selecionar os itens corretos na table. Se você
+            conseguir isso, você avançará para o próximo nível.
         </p>
         <p>
-          Hover over the items on the table to see their HTML markup.
+            Passe o mouse sobre os itens na tabela para ver sua marcação HTML.
         </p>
         <p>
-          Get help with selectors on the right! &rarr;
+            Obtenha ajuda com os seletores no painel à direita! &rarr;
         </p>
-        <a class="note-toggle" href="#">Ok, got it!</a>
-      </div>
+        <a class="note-toggle" href="#">OK, entendi!</a>
+    </div>
 
-      <a class="note-toggle" href="#">Help, I'm stuck!</a>
+    <a class="note-toggle" href="#">Ajuda, Estou confuso!</a>
 
-      <div class="game-wrapper">
+    <div class="game-wrapper">
         <div class="table-wrapper">
-          <div class="table-surface"></div>
-          <div class="nametags"></div>
-          <div class="table"></div>
+            <div class="table-surface"></div>
+            <div class="nametags"></div>
+            <div class="table"></div>
         </div>
         <div class="table-edge">
-          <div class="table-leg"></div>
-          <div class="table-leg"></div>
+            <div class="table-leg"></div>
+            <div class="table-leg"></div>
         </div>
-      </div>
+    </div>
 
-      <div class="editor">
+    <div class="editor">
 
         <div class="editor-pane">
-          <div class="input-header">
-            <div class="file-name">style.css</div> CSS Editor
-          </div>
-          <div class="file-window css-view">
-            <div class="line-numbers">
-              1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20
+            <div class="input-header">
+                <div class="file-name">style.css</div>
+                CSS Editor
             </div>
-              <input class="input-strobe" type="text" placeholder="Type in a CSS selector"/><span class="plus">+</span><div class="enter-button">enter</div>
-            <div>
-            {<br/>
-            /* Styles would go here. */<br/>
-            }
+            <div class="file-window css-view">
+                <div class="line-numbers">
+                    1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20
+                </div>
+                <input class="input-strobe" type="text" placeholder="Insira o seletor CSS"/><span
+                    class="plus">+</span>
+                <div class="enter-button">enter</div>
+                <div>
+                    {<br/>
+                    /* Styles são inseridos aqui. */<br/>
+                    }
+                </div>
+                <div class="help">
+                    <br/>
+                    /* <br/>
+                    Type a number to skip to a level.<br/>
+                    Ex &rarr; "5" for level 5 <br/>*/
+                </div>
             </div>
-            <div class="help">
-              <br/>
-              /* <br/>
-              Type a number to skip to a level.<br/>
-              Ex &rarr; "5" for level 5 <br/>*/
-            </div>
-          </div>
         </div>
 
         <div class="editor-pane html-view">
-          <div class="input-header">
-            <div class="file-name">table.html</div>
-            HTML Viewer
-          </div>
-          <div class="file-window">
-            <div class="line-numbers">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20</div>
-            <div class="markup"></div>
-          </div>
+            <div class="input-header">
+                <div class="file-name">table.html</div>
+                HTML Viewer
+            </div>
+            <div class="file-window">
+                <div class="line-numbers">
+                    1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20
+                </div>
+                <div class="markup"></div>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div class="what-is-this">
+    <div class="what-is-this">
         <p>
-          Made by <a href="http://www.twitter.com/flukeout">@flukeout</a> &mdash; come say hi!
+            Feito por <a href="http://www.twitter.com/flukeout">@flukeout</a> &mdash;
         </p>
         <p>
-          Have feedback or questions? Please file an isssue on <a href="https://github.com/flukeout/css-diner/issues">the Github repo</a>.
+            Traduzido por <a href="https://twitter.com/iago_aa">@iago_aa</a> &mdash;
         </p>
-      </div>
+        <p>
+            Tem alguma feedback ou questao? Por favor mandar uma issue para <a href="https://github.com/flukeout/css-diner/issues">the
+            Github repo</a>.
+        </p>
+    </div>
 
-      <div class="helper"><!-- This is the popup that floats over table elements --></div>
+    <div class="helper"><!-- This is the popup that floats over table elements --></div>
 
-    </div><!-- /left-col -->
+</div><!-- /left-col -->
 
-    <div class="right-col">
+<div class="right-col">
 
-      <div class="help-wrapper">
+    <div class="help-wrapper">
 
         <h1 class="level-header">
-          <span class="level-text"></span>
-          <span class="checkmark"></span>
+            <span class="level-text"></span>
+            <span class="checkmark"></span>
         </h1>
 
         <div class="level-nav">
-          <a class="previous" href="#"></a>
-          <a class="next" href="#"></a>
+            <a class="previous" href="#"></a>
+            <a class="next" href="#"></a>
         </div>
 
-        <div class="level-progress"><div class="progress"></div></div>
+        <div class="level-progress">
+            <div class="progress"></div>
+        </div>
 
         <div class="display-help">
-          <h3 class="selector-name"></h3>
-          <h2 class="title"></h2>
-          <h3 class="syntax"></h3>
-          <div class="hint"></div>
-          <h4 class="examples-title">Examples</h4>
-          <div class="examples"></div>
+            <h3 class="selector-name"></h3>
+            <h2 class="title"></h2>
+            <h3 class="syntax"></h3>
+            <div class="hint"></div>
+            <h4 class="examples-title">Examplos</h4>
+            <div class="examples"></div>
         </div>
-      </div>
+    </div>
 
-      <div class="level-menu">
-        <h2>Choose a level</h2>
+    <div class="level-menu">
+        <h2>Escolha um nível</h2>
         <div class="levels"><!-- level links are inserted here--></div>
-        <a class="reset-progress" href="#">Reset Progress</a>
-      </div>
+        <a class="reset-progress" href="#">Resetar progresso</a>
+    </div>
 
-      <div class="level-menu-toggle-wrapper">
+    <div class="level-menu-toggle-wrapper">
         <div class="level-menu-toggle"></div>
-      </div>
+    </div>
 
-    </div><!-- /right-col -->
+</div><!-- /right-col -->
 
-  <script>
-    if(location.hostname != "localhost"){
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script>
+    if (location.hostname != "localhost") {
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-62998410-1', 'auto');
-      ga('send', 'pageview');
+        ga('create', 'UA-62998410-1', 'auto');
+        ga('send', 'pageview');
     } else {
-      var ga = false;
+        var ga = false;
     }
-  </script>
+</script>
 
-  </body>
+</body>
 </html>
